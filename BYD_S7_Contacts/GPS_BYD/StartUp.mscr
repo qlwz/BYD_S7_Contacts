@@ -1,0 +1,23 @@
+Call("Contacts_Update")
+Exit
+
+
+#同步通讯录
+Sub Contacts_Update
+    source = "\SDMemory2\GPS_BYD\BT.db"
+    target = "\BT Disk\CeApp\BT\BT.db"
+    back = "\SDMemory2\GPS_BYD\BT_" & TimeStamp() & ".db"
+    If (FileExists(source))
+        kill("\SDMemory\CeApp\BT\BT.exe")
+
+        If (FileExists(target))
+            copy(target, back, true)
+            Delete(target)
+        EndIf   
+
+	copy(source, target, true)
+        Message("已经同步通讯录", "同步成功")
+    Else
+        Message("没有找到通讯录数据库", "同步失败")
+    EndIf
+EndSub
