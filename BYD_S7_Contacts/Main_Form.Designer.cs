@@ -91,7 +91,7 @@
             this.txt_BluetoothName.Name = "txt_BluetoothName";
             this.txt_BluetoothName.Size = new System.Drawing.Size(178, 21);
             this.txt_BluetoothName.TabIndex = 3;
-            this.txt_BluetoothName.Text = "罗桂文的 iPhone";
+            this.txt_BluetoothName.Text = "情留メ蚊子的 iPhone";
             // 
             // btn_Generate
             // 
@@ -145,7 +145,7 @@
             this.MaximizeBox = false;
             this.Name = "Main_Form";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "BYD S7 通讯录同步工具";
+            this.Text = "S7 通讯录同步工具 By 情留メ蚊子";
             this.Load += new System.EventHandler(this.Main_Form_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -40,6 +40,8 @@ namespace BYD_S7_Contacts
     QQ同步中可以建立分组：
     1、不常用联系人   该分组的联系人不同步
     2、常用联系人     该分组的联系人名称补充0（优先显示）
+
+By 情留メ蚊子 Email：qlwz@qq.com
 ".Trim();
             this.cbo_NameMerger.SelectedIndex = 0;
         }
